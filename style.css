@@ -221,7 +221,7 @@ nav {
   flex-wrap: wrap;
   gap: 32px;
   max-width: 1200px;
-  margin: auto;
+  margin: 140px auto auto;
 }
 
 .card{
@@ -301,29 +301,6 @@ content: "";
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-/* Footer  */
-
-footer {
-  padding: 0 10px;
-  background: #dcdfef;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
-}
-
-.footerLinks {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-left: auto;
-}
-
-.footer-text {
-  width: 100%;
-}
-
 /* Transport  */
 
 .transport-heading {
@@ -354,12 +331,12 @@ footer {
 
 }
 
-.transport-heading h3{
+.transport-heading h3 {
   font-size: 2rem;
   text-align: center;
 }
 
-.transport{
+.transport {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -375,7 +352,7 @@ footer {
   justify-content: space-between;
 }
 
-.transport-text{
+.transport-text {
   width: 50%;
   height: 100%;
   background: rgba(255, 0, 0, 0.5);
@@ -384,10 +361,11 @@ footer {
   border-bottom-left-radius: 20px;
 }
 
-.transport-img{
+.transport-img {
   width: 50%;
 }
-.transport-img iframe{
+
+.transport-img iframe {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 100%;
@@ -395,14 +373,14 @@ footer {
   border: none;
 }
 
-.transport-list{
+.transport-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.transport-list li{
-  display:flex;
+.transport-list li {
+  display: flex;
   align-items: center;
   gap: 20px;
   background: #ffffff;
@@ -410,6 +388,56 @@ footer {
   border-radius: 10px;
   color: #333333;
 }
+
+/* Tips  */
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+
+}
+
+.tips article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 5px;
+  background: rgba(255, 0, 0, 0.6);
+}
+
+.tips article p {
+  padding-left: 50px;
+  color: #ffffff;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+
+/* Footer  */
+
+footer {
+  padding: 0 10px;
+  background: #dcdfef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.footer-text {
+  width: 100%;
+}
+
 
 
 /* Media Queries */
@@ -454,6 +482,7 @@ footer {
 
     .cardRow {
   padding: 0 20px;
+  margin: auto;
     }
 
     .card {
@@ -492,6 +521,12 @@ footer {
       border-bottom-right-radius: 0;
       }
 
+      /* Tips  */
+
+    .tips article p {
+      padding-left: 25px;
+
+    }
 
   /* Footer  */
 
