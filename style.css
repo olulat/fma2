@@ -11,6 +11,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -18,6 +21,10 @@ h2,
 h3 {
   font-family: "Montserrat", sans-serif;
   color: #0d47a1;
+}
+
+main{
+  margin-bottom: 20px;
 }
 
 .container {
@@ -42,6 +49,12 @@ img {
   font-size: bold;
   padding: 10px;
   border-radius: 10px;
+}
+
+.heading{
+  text-align: center;
+padding: 20px 0;
+
 }
 /* Header Style  */
 
@@ -142,17 +155,11 @@ nav {
   background: #dcdfef;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin: 32px;
-}
 
-.about p {
+
+.about-text {
   line-height: 30px;
+  padding: 30px;
 }
 
 /* Review  */
@@ -196,6 +203,100 @@ nav {
   padding: 0 20px;
 }
 
+/* Card  */
+
+.cardRow{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card{
+  width: 100%;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  max-width: 350px;
+  padding: 10px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+}
+
+.card-head {
+  height: 200px;
+  position: relative;
+}
+.card-head h4{
+ position: absolute;
+ top: 0;
+ right: 0;
+ padding: 10px;
+ background: #ff5722;
+ border-top-right-radius: 12px;
+ border-bottom-left-radius: 12px;
+ color: #ffffff;
+}
+
+.card-head img{
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card-body p{
+  line-height: 30px;
+  color: #333333;
+font-weight: 300;
+}
+
+/* Place  */
+
+.place-heading{
+  position: relative;
+  height: 200px;
+  background-image: url(/images/hero3.jpg);
+ background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.place-heading p{
+font-size: 20px;
+color: #333333;
+color: white;
+}
+
+.place-heading::before{
+content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 255, 0.2); */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+ 
+}
+
+
 /* Footer  */
 
 footer {
@@ -204,6 +305,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 .footerLinks {
@@ -219,7 +321,7 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   nav {
     justify-content: center;
     gap: 20px;
@@ -254,6 +356,24 @@ footer {
   .review:nth-child(2) .review-content {
     flex-direction: column;
   }
+
+  /* Card  */
+
+    .cardRow {
+  padding: 0 20px;
+    }
+
+    .card {
+      min-width: 100%;
+      height: auto;
+    }
+
+        .card-head {
+          max-height: 60%;
+        }
+        .card-body {
+          height: 40%;
+        }
 
   /* Footer  */
 
