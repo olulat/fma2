@@ -23,11 +23,9 @@ h3 {
   color: #0d47a1;
 }
 
-main{
+main {
   margin-bottom: 20px;
-
 }
-
 
 img {
   width: 100%;
@@ -35,7 +33,7 @@ img {
   object-fit: cover;
 }
 
-i img{
+i img {
   height: 40px;
   width: 40px;
   display: block;
@@ -59,10 +57,9 @@ i img{
   border-radius: 10px;
 }
 
-.heading{
-text-align: center;
-padding: 50px 0;
-
+.heading {
+  text-align: center;
+  padding: 50px 0;
 }
 /* Header Style  */
 
@@ -163,8 +160,6 @@ nav {
   background: #dcdfef;
 }
 
-
-
 .about-text {
   line-height: 30px;
   padding: 30px;
@@ -213,7 +208,7 @@ nav {
 
 /* Card  */
 
-.cardRow{
+.cardRow {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -224,7 +219,7 @@ nav {
   margin: 140px auto auto;
 }
 
-.card{
+.card {
   width: 100%;
   border: 2px solid rgba(255, 0, 0, 0.5);
   max-width: 350px;
@@ -239,43 +234,42 @@ nav {
   height: 200px;
   position: relative;
 }
-.card-head h4{
- position: absolute;
- top: 0;
- right: 0;
- padding: 10px;
- background: #ff5722;
- border-top-right-radius: 12px;
- border-bottom-left-radius: 12px;
- color: #ffffff;
+.card-head h4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background: #ff5722;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  color: #ffffff;
 }
 
-.card-head img{
+.card-head img {
   border-radius: 12px;
   overflow: hidden;
 }
 
-
-.card-body{
+.card-body {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-top: 20px;
 }
 
-.card-body p{
+.card-body p {
   line-height: 30px;
   color: #333333;
-font-weight: 300;
+  font-weight: 300;
 }
 
 /* Place  */
 
-.place-heading{
+.place-heading {
   position: relative;
   height: 200px;
-  background-image: url(/images/hero3.jpg);
- background-size: cover;
+  background-image: url(images/hero3.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 20px;
@@ -285,14 +279,14 @@ font-weight: 300;
   align-items: center;
   gap: 30px;
 }
-.place-heading p{
-font-size: 20px;
-color: #333333;
-color: white;
+.place-heading p {
+  font-size: 20px;
+  color: #333333;
+  color: white;
 }
 
-.place-heading::before{
-content: "";
+.place-heading::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -307,7 +301,7 @@ content: "";
   width: 100%;
   position: relative;
   height: 400px;
-  background-image: url(/images/hero2.jpg);
+  background-image: url(images/hero2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -316,7 +310,6 @@ content: "";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .transport-heading::before {
@@ -327,8 +320,6 @@ content: "";
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 255, 0.2);
-
-
 }
 
 .transport-heading h3 {
@@ -396,7 +387,6 @@ content: "";
   flex-direction: column;
   gap: 20px;
   padding: 0 20px;
-
 }
 
 .tips article {
@@ -414,7 +404,6 @@ content: "";
   line-height: 30px;
   letter-spacing: 1px;
 }
-
 
 /* Footer  */
 
@@ -437,8 +426,6 @@ footer {
 .footer-text {
   width: 100%;
 }
-
-
 
 /* Media Queries */
 
@@ -480,53 +467,51 @@ footer {
 
   /* Card  */
 
-    .cardRow {
-  padding: 0 20px;
-  margin: auto;
-    }
-
-    .card {
-      min-width: 100%;
-      height: auto;
-    }
-
-        .card-head {
-          max-height: 60%;
-        }
-        .card-body {
-          height: 40%;
-        }
-
-    /* Transport  */
-
-   .transport-content {
-  flex-direction: column-reverse;
+  .cardRow {
+    padding: 0 20px;
+    margin: auto;
   }
 
-    .transport-text {
-      width: 100%;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
+  .card {
+    min-width: 100%;
+    height: auto;
+  }
 
-    }
-  
-    .transport-img {
-      width: 100%;
-      height: 300px;
-    }
-    .transport-img iframe {
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 0;
-      }
+  .card-head {
+    max-height: 60%;
+  }
+  .card-body {
+    height: 40%;
+  }
 
-      /* Tips  */
+  /* Transport  */
 
-    .tips article p {
-      padding-left: 25px;
+  .transport-content {
+    flex-direction: column-reverse;
+  }
 
-    }
+  .transport-text {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .transport-img {
+    width: 100%;
+    height: 300px;
+  }
+  .transport-img iframe {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0;
+  }
+
+  /* Tips  */
+
+  .tips article p {
+    padding-left: 25px;
+  }
 
   /* Footer  */
 
